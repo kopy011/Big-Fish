@@ -1,5 +1,0 @@
-Micro&Soft specifikáció:
-
-Egy olyan asztali alkalmazást szeretnénk létrehozni, mely segít nyilván tartani egy darts játszma pontjait, kiszállóit, állását.
-Szeretnénk egy darts táblát az ablak közepére annak érdekében, hogy pár kattintással meg lehessen adni miket dobtunk, majd a program kiszámolja a hátralévő pontjainkat és ha van a kiír egy kiszállót is.
-A program számolni fogja egy adott nevű játokos statiszkiát(átlagát, legmagasabb kiszállóját stb.).
