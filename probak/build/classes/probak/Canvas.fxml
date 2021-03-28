@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="CanvPane" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="probak.CanvasController">
+   <children>
+      <Label fx:id="Label1" layoutX="25.0" layoutY="723.0" prefHeight="30.0" prefWidth="80.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="Label2" layoutX="875.0" layoutY="723.0" prefHeight="30.0" prefWidth="80.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="TableImage" fitHeight="700.0" fitWidth="700.0" layoutX="150.0" layoutY="50.0" onMouseClicked="#kattint" pickOnBounds="true" preserveRatio="true">
+         <image>
+           <Image url="@image/tabla3.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Label fx:id="Label3" layoutX="462.0" layoutY="757.0" prefHeight="30.0" prefWidth="80.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="Label4" layoutX="656.0" layoutY="757.0" prefHeight="30.0" prefWidth="80.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
