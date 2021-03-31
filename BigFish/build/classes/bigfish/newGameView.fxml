@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="1002.0" style="-fx-background-color: #cccaca;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bigfish.NewGameViewController">
+    <children>
+        <Pane prefHeight="517.0" prefWidth="301.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <Label alignment="CENTER" prefHeight="81.0" prefWidth="301.0" text="Big Fish" textAlignment="CENTER">
+                    <font>
+                        <Font size="55.0" />
+                    </font>
+                </Label>
+                <Button fx:id="P1showBtn" layoutY="112.0" mnemonicParsing="false" onAction="#menutBtnAction" prefHeight="81.0" prefWidth="301.0" styleClass="newGamemenubtn" stylesheets="@../css/style.css" text="Player 1">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                </Button>
+                <Button fx:id="P2showBtn" layoutY="193.0" mnemonicParsing="false" onAction="#menutBtnAction" prefHeight="81.0" prefWidth="301.0" styleClass="newGamemenubtn" stylesheets="@../css/style.css" text="Player 2">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                </Button>
+                <Button fx:id="matchShowBtn" layoutY="274.0" mnemonicParsing="false" onAction="#menutBtnAction" prefHeight="81.0" prefWidth="301.0" styleClass="newGamemenubtn" stylesheets="@../css/style.css" text="Match">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                </Button>
+                <Button fx:id="startBtn" layoutY="355.0" mnemonicParsing="false" onAction="#menutBtnAction" prefHeight="81.0" prefWidth="301.0" styleClass="newGamemenubtn" stylesheets="@../css/style.css" text="Start">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                </Button>
+                <Button fx:id="cancelBtn" layoutY="436.0" mnemonicParsing="false" onAction="#menutBtnAction" prefHeight="81.0" prefWidth="301.0" styleClass="newGamemenubtn" stylesheets="@../css/style.css" text="Cancel">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Pane fx:id="P1Pane" layoutX="319.0" layoutY="1.0" prefHeight="517.0" prefWidth="683.0" visible="false">
+            <children>
+                <Label fx:id="P1Label" alignment="CENTER" layoutX="260.0" text="Player 1">
+                    <font>
+                        <Font size="49.0" />
+                    </font>
+                </Label>
+                <RadioButton fx:id="P1radioBot" layoutX="432.0" layoutY="124.0" mnemonicParsing="false" onAction="#radioChange" prefHeight="32.0" prefWidth="87.0" text="Bot">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="player1Type" />
+                    </toggleGroup>
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="P1radioGuest" layoutX="306.0" layoutY="124.0" mnemonicParsing="false" onAction="#radioChange" prefHeight="32.0" prefWidth="87.0" text="Guest" toggleGroup="$player1Type">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="P1radioPlayer" layoutX="171.0" layoutY="124.0" mnemonicParsing="false" onAction="#radioChange" prefHeight="32.0" prefWidth="87.0" selected="true" text="Player" toggleGroup="$player1Type">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </RadioButton>
+                <Pane fx:id="P1botPane" layoutX="195.0" layoutY="186.0" prefHeight="200.0" prefWidth="301.0" visible="false">
+                    <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Difficulty:" />
+                        <ComboBox fx:id="p1" layoutX="137.0" layoutY="9.0" prefWidth="150.0" />
+                    </children>
+                </Pane>
+                <Pane fx:id="P1loginPane" layoutX="195.0" layoutY="184.0" prefHeight="203.0" prefWidth="301.0">
+                    <children>
+                        <TextField fx:id="P1lgName" layoutX="14.0" layoutY="35.0" prefHeight="31.0" prefWidth="261.0" />
+                        <Label layoutX="111.0" layoutY="14.0" text="Username" />
+                        <Label layoutX="113.0" layoutY="71.0" text="Password" />
+                        <PasswordField fx:id="P1lgPassword" layoutX="14.0" layoutY="92.0" prefHeight="31.0" prefWidth="261.0" />
+                        <Button fx:id="P1regShowBtn" layoutX="150.0" layoutY="140.0" mnemonicParsing="false" onAction="#regShow" prefHeight="31.0" prefWidth="125.0" text="Register" />
+                        <Button fx:id="P1btnLogin" layoutX="14.0" layoutY="140.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="31.0" prefWidth="125.0" text="Login" />
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+        <Pane fx:id="P2Pane" layoutX="319.0" layoutY="3.0" prefHeight="512.0" prefWidth="683.0" visible="false">
+            <children>
+                <Label fx:id="P2Label" alignment="CENTER" layoutX="260.0" text="Player 2">
+                    <font>
+                        <Font size="49.0" />
+                    </font>
+                </Label>
+                <RadioButton fx:id="P2radioBot" layoutX="432.0" layoutY="124.0" mnemonicParsing="false" onAction="#radioChange" prefHeight="32.0" prefWidth="87.0" text="Bot">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="player1Type1" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="P2radioGuest" layoutX="306.0" layoutY="124.0" mnemonicParsing="false" onAction="#radioChange" prefHeight="32.0" prefWidth="87.0" text="Guest" toggleGroup="$player1Type1">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="P2radioPlayer" layoutX="171.0" layoutY="124.0" mnemonicParsing="false" onAction="#radioChange" prefHeight="32.0" prefWidth="87.0" selected="true" text="Player" toggleGroup="$player1Type1">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </RadioButton>
+                <Pane fx:id="P2botPane" layoutX="199.0" layoutY="187.0" prefHeight="200.0" prefWidth="301.0" visible="false">
+                    <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Difficulty:" />
+                        <ComboBox fx:id="p2diffcomboBox" layoutX="143.0" layoutY="9.0" prefWidth="150.0" />
+                    </children>
+                </Pane>
+            <Pane fx:id="P2loginPane" layoutX="191.0" layoutY="185.0" prefHeight="203.0" prefWidth="301.0">
+               <children>
+                  <TextField fx:id="P2lgName" layoutX="14.0" layoutY="35.0" prefHeight="31.0" prefWidth="261.0" />
+                  <Label layoutX="111.0" layoutY="14.0" text="Username" />
+                  <Label layoutX="113.0" layoutY="71.0" text="Password" />
+                  <PasswordField fx:id="P2lgPassword" layoutX="14.0" layoutY="92.0" prefHeight="31.0" prefWidth="261.0" />
+                  <Button fx:id="P2regShowBtn" layoutX="150.0" layoutY="140.0" mnemonicParsing="false" onAction="#regShow" prefHeight="31.0" prefWidth="125.0" text="Register" />
+                  <Button fx:id="P2btnLogin" layoutX="14.0" layoutY="140.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="31.0" prefWidth="125.0" text="Login" />
+               </children>
+            </Pane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

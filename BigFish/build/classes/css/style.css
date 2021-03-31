@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2021. márc. 25., 10:09:39
+    Author     : kopyk
+*/
+
+.menubtn{
+    -fx-background-color:  #ffffff;
+    -fx-background-radius: 20;
+    -fx-text-fill: black;
+    -fx-border-color: white;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20;
+}
+.menubtn:hover{
+    -fx-background-color:  #cccaca;   
+}
+
+.newGamemenubtn{
+    -fx-background-color:  #ffffff;
+    -fx-text-fill: black;
+    -fx-border-radius: 0;
+}
+.newGamemenubtn:hover{
+    -fx-background-color:  #cccaca;
+    -fx-border-width: 0 0 0 5;
+    -fx-border-style: solid;
+    -fx-border-color: black;
+}
+
+
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="473.0" prefWidth="769.0" style="-fx-background-color: #cccaca;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="bigfish.regController">
+   <children>
+      <TextField fx:id="username" layoutX="250.0" layoutY="155.0" prefHeight="31.0" prefWidth="270.0" />
+      <TextField fx:id="email" layoutX="250.0" layoutY="217.0" prefHeight="31.0" prefWidth="270.0" />
+      <PasswordField fx:id="password" layoutX="250.0" layoutY="279.0" prefHeight="31.0" prefWidth="270.0" />
+      <PasswordField fx:id="repassword" layoutX="250.0" layoutY="341.0" prefHeight="31.0" prefWidth="270.0" />
+      <Label layoutX="338.0" layoutY="124.0" text="Username">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="360.0" layoutY="186.0" text="Email">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="248.0" text="Password">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="322.0" layoutY="310.0" text="Re- password">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" text="Register">
+         <font>
+            <Font size="70.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelBtn" layoutX="250.0" layoutY="383.0" mnemonicParsing="false" onAction="#btnExitClick" prefHeight="71.0" prefWidth="94.0" styleClass="menubtn" stylesheets="@../css/style.css" text="Cancel" />
+      <Button fx:id="regBtn" layoutX="426.0" layoutY="383.0" mnemonicParsing="false" onAction="#register" prefHeight="71.0" prefWidth="94.0" styleClass="menubtn" stylesheets="@../css/style.css" text="Register" />
+   </children>
+</AnchorPane>
