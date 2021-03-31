@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="849.0" prefWidth="1080.0" style="-fx-background-color: #cccaca;" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bigfish.viewController">
+   <children>
+      <ImageView fitHeight="615.0" fitWidth="860.0" layoutX="53.0" layoutY="55.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/background.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="menuPane" layoutX="323.0" layoutY="279.0" prefHeight="556.0" prefWidth="435.0">
+         <children>
+            <Button fx:id="btnNewGame" alignment="CENTER" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#newGame" onMouseEntered="#menuAnimation" onMouseExited="#menuAnimationExit" prefHeight="154.0" prefWidth="192.0" styleClass="menubtn" stylesheets="@../css/style.css" text="New game">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnScoreboard" alignment="CENTER" layoutX="14.0" layoutY="202.0" mnemonicParsing="false" onMouseEntered="#menuAnimation" onMouseExited="#menuAnimationExit" prefHeight="154.0" prefWidth="192.0" styleClass="menubtn" stylesheets="@../css/style.css" text="Scoreboard">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPractice" alignment="CENTER" layoutX="229.0" layoutY="27.0" mnemonicParsing="false" onMouseEntered="#menuAnimation" onMouseExited="#menuAnimationExit" prefHeight="154.0" prefWidth="192.0" styleClass="menubtn" stylesheets="@../css/style.css" text="Practice">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitBtn" alignment="CENTER" layoutX="13.0" layoutY="373.0" mnemonicParsing="false" onAction="#btnExitClick" onMouseEntered="#menuAnimation" onMouseExited="#menuAnimationExit" prefHeight="154.0" prefWidth="408.0" styleClass="menubtn" stylesheets="@../css/style.css" text="Exit">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCredits" alignment="CENTER" layoutX="229.0" layoutY="202.0" mnemonicParsing="false" onMouseEntered="#menuAnimation" onMouseExited="#menuAnimationExit" prefHeight="154.0" prefWidth="192.0" styleClass="menubtn" stylesheets="@../css/style.css" text="Credits">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="595.0" layoutY="40.0" text="Big Fish">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="new_game_img" fitHeight="99.0" fitWidth="99.0" layoutX="521.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/dart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="new_game_img1" fitHeight="99.0" fitWidth="99.0" layoutX="736.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/dart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="new_game_img2" fitHeight="99.0" fitWidth="99.0" layoutX="521.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/dart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="new_game_img3" fitHeight="99.0" fitWidth="99.0" layoutX="736.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/dart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="new_game_img4" fitHeight="99.0" fitWidth="99.0" layoutX="736.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/dart.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
